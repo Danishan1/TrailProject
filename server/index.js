@@ -18,9 +18,9 @@ app.use(cors({
   credentials: true
 }));
 
-app("/danishan", (req, res) => {
-  res.json({ name: "Danishan" })
-})
+app.get("/danishan", (req, res) => {
+  res.json({ name: "Danishan" });
+});
 
 
 app.use(express.json());
