@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;500&display=swap");
+
+:root {
+    --light: #edf2f9;
+    --dark: #152e4d;
+    --darker: #12263f;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--light);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.errorCode {
+    font-size: 9rem;
+    font-weight: var(--boldL2);
+    color: var(--colorRed);
+}
+
+.icon {
+    font-size: var(--size);
+    width: 35px;
+    color: var(--colorRed);
+}
+
+.icon path {
+    color: var(--colorRed);
+}
+
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 15px;
+}
+
+.titleText {
+    font-size: 2rem;
+    font-weight: var(--boldL2);
+    color: #4a5568;
+}
+
+.link {
+    color: var(--colorBlue);
+    cursor: pointer;
+    font-weight: var(--boldL2);
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.description,
+.instruction {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+@media (max-width: 520px) {
+
+    .errorCode {
+        font-size: 6rem;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .titleText {
+        font-size: 1.7rem;
+    }
+
+    .description,
+    .link,
+    .instruction {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .errorCode {
+        font-size: 6rem;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .titleText {
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media (max-width: 300px) {
+
+    .errorCode {
+        font-size: 4rem;
+    }
+
+    .icon {
+        width: 20px;
+    }
+
+    .titleText {
+        font-size: 1rem;
+    }
+
+    .description,
+    .link,
+    .instruction {
+        font-size: 0.9rem;
+    }
+}

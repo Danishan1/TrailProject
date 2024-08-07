@@ -1,0 +1,94 @@
+.search {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--colorCyan);
+
+}
+
+.input::placeholder {
+  color: var(--colorCyan);
+}
+
+.input:focus {
+  border: none;
+  border-bottom: 2px solid var(--colorBlue);
+  outline: none;
+  color: var(--colorBlue);
+}
+
+.suggestionsList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--colorWhite);
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 3px 10px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.suggestionItem {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  text-decoration: underline;
+  color: var(--colorBlue);
+  font-weight: var(--boldL2);
+}
+
+@media (max-width: 690px) {
+  .search {
+    position: static;
+    width: 100%;
+  }
+
+ 
+  .suggestionsList {
+    top: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-height: 250px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media (max-width: 690px) {
+  .suggestionsList {
+    width: 280px;
+    left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .suggestionsList {
+    width: 236px;
+    left: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .suggestionsList {
+    width: 190px;
+    left: 6px;
+
+  }
+}
+
+@media (max-width: 360px) {
+  .suggestionsList {
+    width: 160px;
+    left: 6px;
+
+  }
+}

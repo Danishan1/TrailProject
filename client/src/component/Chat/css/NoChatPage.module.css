@@ -1,0 +1,26 @@
+.noChatPage {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image svg {
+    font-size: 4rem;
+
+
+}
+
+.image svg path {
+    color: var(--colorGray3);
+}
+
+.text {
+    font-weight: var(--boldL2);
+    color: var(--colorGray5);
+    max-width: 60%;
+    text-align: center;
+}

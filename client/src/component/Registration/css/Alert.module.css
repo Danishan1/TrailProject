@@ -1,0 +1,59 @@
+.alertContainer {
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    /* 10px gap between alerts */
+}
+
+.alert {
+    position: relative;
+    padding: 5px 20px 10px 20px;
+    border-radius: 5px;
+    right: 20px;
+    top: 30px;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+    background-color: var(--colorWhite);
+    overflow: hidden;
+}
+
+.alert.success {
+    border: 1px solid var(--colorCyan);
+    color: var(--colorCyan);
+}
+
+.alert.error {
+    border: 1px solid var(--colorRed);
+    color: var(--colorRed);
+}
+
+.alert.info {
+    border: 1px solid var(--colorYellow);
+    color: var(--colorYellow);
+}
+
+.statusBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    transition: width 1s linear;
+}
+
+.error .statusBar {
+    background-color: var(--colorRed);
+}
+
+.success .statusBar {
+    background-color: var(--colorCyan);
+}
+
+.info .statusBar {
+    background-color: var(--colorYellow);
+}

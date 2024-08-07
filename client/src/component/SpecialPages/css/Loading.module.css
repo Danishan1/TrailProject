@@ -1,0 +1,22 @@
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--colorWhite);
+}
+
+.top {
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.text {
+    font-weight: var(--boldL2);
+    color: var(--colorCyan);
+    width: 80px;
+    font-size: calc(var(--size) * 1.2);
+}

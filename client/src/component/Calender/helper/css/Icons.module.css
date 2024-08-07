@@ -1,0 +1,42 @@
+.icon {
+    fill: var(--colorCyan);
+}
+
+.stroke {
+    stroke: var(--colorCyan);
+}
+
+
+.svgIcon {
+    /* font-size: 2rem; */
+    font-size: calc(var(--size) * 2);
+    cursor: pointer;
+}
+
+.small {
+    font-size: calc(var(--size) * 1.2);
+}
+
+.iconSetter {
+    display: flex;
+    justify-content: center;
+}
+
+.iconSetter:hover {
+    cursor: pointer;
+}
+
+.setIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.setIcon p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--colorBlue);
+}

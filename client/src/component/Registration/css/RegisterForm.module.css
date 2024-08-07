@@ -1,0 +1,95 @@
+.formRapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userForm {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.userForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.userId {
+    font-size: calc(var(--size)*1.2);
+    padding-left: 10px;
+    font-weight: var(--boldL2);
+}
+
+.userId span {
+    font-size: calc(var(--size)*1.2);
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 400px;
+}
+
+.btnRapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.progress {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+
+}
+
+.circle {
+    background-color: var(--colorCyan);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+
+}
+
+.currentSec {
+    background-color: var(--colorBlue);
+    height: 5px;
+    width: 30px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+@media (max-width : 500px) {
+    .formSection {
+        max-width: 350px;
+    }
+}
+
+@media (max-width : 450px) {
+    .formSection {
+        min-width: 300px;
+    }
+}
+
+@media (max-width : 350px) {
+    .formSection {
+        min-width: 250px;
+    }
+}
+
+@media (max-width : 300px) {
+    .formSection {
+        min-width: 200px;
+    }
+}

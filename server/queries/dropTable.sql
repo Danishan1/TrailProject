@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS call_up;
+DROP TABLE IF EXISTS media;
+DROP TABLE IF EXISTS location;
+DROP TABLE IF EXISTS meeting;
+DROP TABLE IF EXISTS payment;
+DROP TABLE IF EXISTS text;
+DROP TABLE IF EXISTS file;
+DROP TABLE IF EXISTS chat_list;
+DROP TABLE IF EXISTS chat_participant;
+DROP TABLE IF EXISTS message;
+DROP TABLE IF EXISTS chat;
+
+
+-- -- -- DROP TABLE IF EXISTS user;
+-- -- -- DROP TABLE IF EXISTS organization;
+-- -- -- DROP TABLE IF EXISTS verification;
+-- -- -- DROP TABLE IF EXISTS address;

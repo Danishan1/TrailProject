@@ -1,0 +1,102 @@
+.chatBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.chatBox.continuation {
+  margin-top: 5px;
+}
+
+.chatBox.newMessage {
+  margin-top: 10px;
+}
+
+.content {
+  max-width: 600px;
+  min-width: 350px;
+  border: 1px solid var(--colorCyan);
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.chatBox.sent .content {
+  border-top-right-radius: 0;
+  order: 1;
+}
+
+.chatBox.sent {
+  justify-content: right;
+  padding-left: 20px;
+}
+
+.chatBox.received .content {
+  border-top-left-radius: 0;
+  order: 0;
+}
+
+.chatBox.received {
+  justify-content: left;
+  padding-right: 20px;
+
+}
+
+.senderInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+}
+
+.dp img {
+  border-radius: 50%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.idDateTime {
+  display: flex;
+  padding: 5px 20px;
+  justify-content: space-between;
+  font-size: 0.7em;
+}
+
+.idDateTime p {
+  font-size: calc(var(--size) * 0.8);
+  font-weight: var(--boldL2);
+  color: var(--colorGray5);
+}
+
+.share {
+  opacity: 0.2;
+}
+
+.share:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.info svg {
+  margin-top: 4px;
+  font-size: calc(var(--size)*0.9);
+}
+
+@media (max-width:420px) {
+
+  .content {
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,15 @@
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+
+.icon svg {
+    cursor: default;
+    font-size: 3rem;
+    opacity: 0.5;
+}

@@ -1,0 +1,63 @@
+.fileUpload {
+    width: 200px;
+    /* Adjust the size as needed */
+    height: 200px;
+    border: 2px dashed var(--colorCyan);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    color: var(--colorCyan);
+}
+
+.fileUpload.dragging {
+    border-color: var(--colorBlue);
+    background-color: var(--colorGray1);
+    color: var(--colorCyan);
+}
+
+.fileUpload .label {
+    color: var(--colorGray4);
+}
+
+.fileUpload:hover .label {
+    font-weight: var(--boldL2);
+}
+
+.fileUpload input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+/* .infor {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid red;
+} */
+
+.infor {
+    padding: 10px;
+}
+.infor p {
+    display: inline;
+}
+
+.resetLink {
+    margin-left: 20px;
+    font-weight: var(--boldL2);
+    color: var(--colorCyan);
+}
+
+.resetLink:hover {
+    color: var(--colorBlue);
+    cursor: pointer;
+    text-decoration: underline;
+}

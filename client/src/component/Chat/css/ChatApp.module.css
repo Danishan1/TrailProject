@@ -1,0 +1,68 @@
+.chatApp {
+    display: flex;
+}
+
+/* .sectionA {
+    border: 1px solid #685b36;
+    width: 4vw;
+} */
+
+.sectionB {
+    width: 41vw;
+}
+
+.sectionC {
+    width: 55vw;
+    /* border: 1px solid #36684c; */
+}
+
+@media (width < 1200px) {
+
+    .sectionB {
+        width: 45vw;
+    }
+
+    .sectionC {
+        /* width: 50vw; */
+        width: 55vw;
+    }
+}
+
+@media (width < 890px) {
+
+    .sectionA {
+        display: none;
+    }
+
+    .sectionB {
+        width: 10vw;
+    }
+
+    .sectionC {
+        width: 90vw;
+    }
+}
+
+@media (width < 600px) {
+
+    .sectionA {
+        display: none;
+    }
+
+    .sectionB {
+        width: 100vw;
+    }
+
+    .sectionC {
+        display: none;
+        width: 100vw;
+    }
+
+    .openSection {
+        display: flex;
+    }
+
+    .closeSection {
+        display: none;
+    }
+}
