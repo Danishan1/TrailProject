@@ -15,7 +15,7 @@ const sessionMiddleware = sessionConfig();
 // app.use(cors());
 app.use(cors({
   origin: 'http://localhost:3000', // Your React app's address
-  credentials: true
+  credentials: false
 }));
 
 app.get("/danishan", (req, res) => {
@@ -24,7 +24,7 @@ app.get("/danishan", (req, res) => {
 
 
 app.use(express.json());
-app.use(sessionMiddleware);
+// app.use(sessionMiddleware);
 
 app.use("/api", mainRoute);
 app.use(errorHandler);
