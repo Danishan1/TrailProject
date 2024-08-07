@@ -18,6 +18,10 @@ app.use(cors({
   credentials: true
 }));
 
+app("/danishan", (req, res) => {
+  res.json({ name: "Danishan" })
+})
+
 
 app.use(express.json());
 app.use(sessionMiddleware);
